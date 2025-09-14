@@ -1,0 +1,209 @@
+
+/* This line imports the DM Sans font family from Google Fonts with all available weights and styles, optimizing display performance with swap. */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* This line imports both DM Sans and Unbounded font families from Google Fonts with their full weight ranges and optimized display performance. */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Unbounded:wght@200..900&display=swap');
+
+/* This line targets all h1 elements and applies the Unbounded font family to them. */
+h1 {
+    font-family: "Unbounded";
+}
+
+/* This line targets all h2 elements and applies the Unbounded font family to them. */
+h2 {
+    font-family: "Unbounded";
+}
+
+/* This line targets all h3 elements and applies the Unbounded font family to them. */
+h3 {
+    font-family: "Unbounded";
+}
+
+/* This line targets all paragraph elements and applies the DM Sans font family to them. */
+p {
+    font-family: "DM Sans"
+}
+
+/* This line targets all div elements and applies the DM Sans font family to them. */
+div {
+    font-family: "DM Sans"
+}
+
+/* This line targets the body element and sets its background color to a pale green color (#98fb98). */
+body {
+    background-color: #98fb98;
+}
+/* This line targets elements with the class "description-container" and sets their maximum width to 900 pixels. */
+.description-container {
+    max-width: 900px;
+    /* This line centers the container horizontally by setting left and right margins to auto with no top/bottom margins. */
+    margin: 0 auto;
+    /* This line sets the background color of the container to white. */
+    background-color: white;
+    /* This line rounds all corners of the container with a 12-pixel radius. */
+    border-radius: 12px;
+    /* This line adds 40 pixels of padding inside the container on all sides. */
+    padding: 40px;
+    /* This line creates a drop shadow that is offset 4 pixels down, blurred 12 pixels, with 15% opacity black color. */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* This line targets elements with the class "description-header" and applies flexbox layout to them. */
+.description-header {
+    display: flex;
+    /* This line aligns flex items to the top of the container (flex-start on the cross axis). */
+    align-items: flex-start;
+    /* This line creates 30 pixels of space between flex items. */
+    gap: 30px;
+    /* This line adds 30 pixels of space below the header element. */
+    margin-bottom: 30px;
+}
+
+/* This line targets elements with the class "description-image" and prevents them from shrinking in a flex container. */
+.description-image {
+    flex-shrink: 0;
+    /* This line sets the width of the image container to 300 pixels. */
+    width: 300px;
+    /* This line sets the height of the image container to 200 pixels. */
+    height: 200px;
+    /* This line sets the background color to a very light blue (#E1F5FE). */
+    background-color: #E1F5FE;
+    /* This line rounds the corners of the image container with a 10-pixel radius. */
+    border-radius: 10px;
+    /* This line adds a 2-pixel solid border in blue color (#0288D1). */
+    border: 2px solid #0288D1;
+    /* This line applies flexbox layout to center content within the image container. */
+    display: flex;
+    /* This line centers content vertically within the flex container. */
+    align-items: center;
+    /* This line centers content horizontally within the flex container. */
+    justify-content: center;
+    /* This line sets the text color inside the image container to dark blue (#0277BD). */
+    color: #0277BD;
+    /* This line sets the font size of text inside the image container to 14 pixels. */
+    font-size: 14px;
+}
+
+/* This line targets elements with the class "description-content" and makes them take up all available flex space. */
+.description-content {
+    flex: 1;
+}
+
+/* This line targets elements with the class "description-title" and sets their text color to dark blue (#0277BD). */
+.description-title {
+    color: #0277BD;
+    /* This line sets the font size of the title to 32 pixels. */
+    font-size: 32px;
+    /* This line adds 15 pixels of space below the title. */
+    margin-bottom: 15px;
+    /* This line removes any top margin from the title. */
+    margin-top: 0;
+}
+
+/* This line targets elements with the class "description-text" and sets their text color to a darker blue (#01579B). */
+.description-text {
+    color: #01579B;
+    /* This line sets the line height to 1.6 times the font size for better readability. */
+    line-height: 1.6;
+    /* This line sets the font size of the description text to 16 pixels. */
+    font-size: 16px;
+    /* This line adds 20 pixels of space below the description text. */
+    margin-bottom: 20px;
+}
+
+/* This line targets elements with the class "description-details" and sets their background to a very light purple (#F3E5F5). */
+.description-details {
+    background-color: #F3E5F5;
+    /* This line adds 25 pixels of padding inside the details container on all sides. */
+    padding: 25px;
+    /* This line rounds the corners of the details container with a 10-pixel radius. */
+    border-radius: 10px;
+    /* This line adds a 2-pixel solid border in purple color (#9C27B0). */
+    border: 2px solid #9C27B0;
+}
+
+/* This line targets h3 elements that are inside elements with the class "description-details" and sets their text color to dark purple (#7B1FA2). */
+.description-details h3 {
+    color: #7B1FA2;
+    /* This line removes any top margin from h3 elements within the details section. */
+    margin-top: 0;
+    /* This line sets the font size of h3 elements within the details section to 20 pixels. */
+    font-size: 20px;
+}
+
+/* This line targets paragraph elements that are inside elements with the class "description-details" and sets their text color to medium purple (#8E24AA). */
+.description-details p {
+    color: #8E24AA;
+    /* This line sets the line height to 1.5 times the font size for comfortable reading. */
+    line-height: 1.5;
+    /* This line adds 10 pixels of space below each paragraph in the details section. */
+    margin-bottom: 10px;
+}
+
+/* This line targets elements with the class "action-buttons" and adds 30 pixels of space above them. */
+.action-buttons {
+    margin-top: 30px;
+    /* This line applies flexbox layout to the action buttons container. */
+    display: flex;
+    /* This line creates 15 pixels of space between flex items (buttons). */
+    gap: 15px;
+    /* This line centers the buttons horizontally within their container. */
+    justify-content: center;
+}
+
+/* This line targets elements with the class "website-links" and sets their background to transparent (no background color). */
+.website-links {
+    background-color: transparent;
+    /* This line sets the text color of website links to purple (#9C27B0). */
+    color: #9C27B0;
+    /* This line adds 12 pixels of padding on top and bottom, and 24 pixels on left and right. */
+    padding: 12px 24px;
+    /* This line adds a 2-pixel solid border in purple color (#9C27B0). */
+    border: 2px solid #9C27B0;
+    /* This line rounds the corners of the website links with a 6-pixel radius. */
+    border-radius: 6px;
+    /* This line changes the mouse cursor to a pointer when hovering over the link, indicating it's clickable. */
+    cursor: pointer;
+    /* This line sets the font size of the website links to 16 pixels. */
+    font-size: 16px;
+}
+
+/* This line targets elements with the class "back-button" and sets their background color to light green (#90ee90). */
+.back-button {
+    background-color: #90ee90;
+    /* This line sets the text color of the back button to lime green (#32cd32). */
+    color: #32cd32;
+    /* This line adds 12 pixels of padding on top and bottom, and 24 pixels on left and right. */
+    padding: 12px 24px;
+    /* This line removes any border from the back button. */
+    border: none;
+    /* This line rounds the corners of the back button with an 8-pixel radius. */
+    border-radius: 8px;
+    /* This line changes the mouse cursor to a pointer when hovering over the button, indicating it's clickable. */
+    cursor: pointer;
+    /* This line sets the font size of the back button to 16 pixels. */
+    font-size: 16px;
+    /* This line removes underlines from the back button if it's used as a link. */
+    text-decoration: none;
+    /* This line makes the back button behave as an inline-block element for proper spacing. */
+    display: inline-block;
+    /* This line creates a smooth color transition effect over 0.3 seconds when the background color changes. */
+    transition: background-color 0.3s ease;
+}
+
+/* This line targets the back button when it is hovered over and changes its background color to light blue (#29B6F6). */
+.back-button:hover {
+    background-color: #29B6F6;
+    /* This line changes the text color to dark blue (#0288D1) when the back button is hovered over. */
+    color: #0288D1;
+}
+
+/* This line targets elements with the class "nav-buttons" and applies flexbox layout to them. */
+.nav-buttons {
+    display: flex;
+    /* This line spreads the navigation buttons to opposite ends of their container with maximum space between them. */
+    justify-content: space-between;
+    /* This line adds 30 pixels of space above the navigation buttons container. */
+    margin-top: 30px;
+}

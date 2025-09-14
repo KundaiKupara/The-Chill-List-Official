@@ -1,0 +1,266 @@
+
+/* This line imports the DM Sans font family from Google Fonts with all available weights and styles, optimizing display performance with swap. */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* This line targets the body element and applies the DM Sans font as the primary font with sans-serif as fallback. */
+body {
+    font-family: "DM Sans", sans-serif;
+    /* This line creates a diagonal gradient background that transitions from light blue (#4FC3F7) to a darker blue (#29B6F6) at a 135-degree angle. */
+    background: linear-gradient(135deg, #4FC3F7, #29B6F6);
+    /* This line removes all default margins from the body element. */
+    margin: 0;
+    /* This line adds 20 pixels of padding on all sides of the body element. */
+    padding: 20px;
+    /* This line ensures the body element takes up at least the full height of the viewport. */
+    min-height: 100vh;
+}
+
+/* This line targets elements with the class "homepage-container" and sets their maximum width to 1200 pixels. */
+.homepage-container {
+    max-width: 1200px;
+    /* This line centers the container horizontally by setting left and right margins to auto. */
+    margin: 0 auto;
+    /* This line sets the background color of the container to white. */
+    background-color: white;
+    /* This line rounds all corners of the container with a 12-pixel radius. */
+    border-radius: 12px;
+    /* This line adds 30 pixels of padding inside the container on all sides. */
+    padding: 30px;
+    /* This line creates a drop shadow that is offset 4 pixels down, blurred 12 pixels, with 15% opacity black color. */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* This line targets elements with the class "homepage-header" and centers their text content. */
+.homepage-header {
+    text-align: center;
+    /* This line adds 30 pixels of space below the header element. */
+    margin-bottom: 30px;
+}
+
+/* This line targets all h1 elements and sets their text color to a dark blue (#1976D2). */
+h1 {
+    color: #1976D2;
+    /* This line sets the font size of h1 elements to 48 pixels. */
+    font-size: 48px;
+    /* This line adds 10 pixels of space below h1 elements. */
+    margin-bottom: 10px;
+    /* This line makes the h1 text bold. */
+    font-weight: bold;
+}
+
+/* This line targets elements with the class "subtitle" and sets their text color to a medium gray (#666). */
+.subtitle {
+    color: #666;
+    /* This line sets the font size of subtitle elements to 18 pixels. */
+    font-size: 18px;
+    /* This line adds 30 pixels of space below subtitle elements. */
+    margin-bottom: 30px;
+}
+
+/* This line targets elements with the class "search-section" and centers their text content. */
+.search-section {
+    text-align: center;
+    /* This line adds 40 pixels of space below the search section. */
+    margin-bottom: 40px;
+}
+
+/* This line targets elements with the class "search-bar" and sets their width to 80% of their parent container. */
+.search-bar {
+    width: 80%;
+    /* This line ensures the search bar never exceeds 600 pixels in width. */
+    max-width: 600px;
+    /* This line adds 15 pixels of padding on top and bottom, and 20 pixels on left and right inside the search bar. */
+    padding: 15px 20px;
+    /* This line sets the font size of text inside the search bar to 18 pixels. */
+    font-size: 18px;
+    /* This line creates a 2-pixel solid border around the search bar in light blue color (#29B6F6). */
+    border: 2px solid #29B6F6;
+    /* This line rounds the corners of the search bar with a 25-pixel radius, creating a pill shape. */
+    border-radius: 25px;
+    /* This line removes the default focus outline that browsers add to form elements. */
+    outline: none;
+    /* This line adds a subtle shadow below the search bar with light blue color at 20% opacity. */
+    box-shadow: 0 2px 8px rgba(41, 182, 246, 0.2);
+}
+
+/* This line targets the search bar when it is focused (clicked or tabbed to) and changes its border color to dark blue (#1976D2). */
+.search-bar:focus {
+    border-color: #1976D2;
+    /* This line enhances the shadow effect when the search bar is focused, making it more prominent with 30% opacity. */
+    box-shadow: 0 2px 12px rgba(25, 118, 210, 0.3);
+}
+
+/* This line targets all paragraph elements and sets their text color to dark blue (#1976D2). */
+p {
+    color: #1976D2;
+    /* This line sets the font size of paragraphs to 20 pixels. */
+    font-size: 20px;
+    /* This line makes paragraph text semi-bold with a weight of 600. */
+    font-weight: 600;
+    /* This line adds 15 pixels of space below each paragraph. */
+    margin-bottom: 15px;
+}
+
+/* This line targets elements with the class "ideas-grid" and applies CSS Grid layout to them. */
+.ideas-grid {
+    display: grid;
+    /* This line creates 4 equal-width columns in the grid layout. */
+    grid-template-columns: repeat(4, 1fr);
+    /* This line sets 20 pixels of space between all grid items. */
+    gap: 20px;
+    /* This line adds 30 pixels of space below the grid container. */
+    margin-bottom: 30px;
+}
+
+/* This line targets elements with the class "idea-card" and sets their background to a very light blue (#E3F2FD). */
+.idea-card {
+    background-color: #E3F2FD;
+    /* This line rounds the corners of each card with a 12-pixel radius. */
+    border-radius: 12px;
+    /* This line hides any content that extends beyond the card's rounded corners. */
+    overflow: hidden;
+    /* This line adds a 2-pixel solid border around each card in light blue (#29B6F6). */
+    border: 2px solid #29B6F6;
+    /* This line changes the mouse cursor to a pointer when hovering over the card, indicating it's clickable. */
+    cursor: pointer;
+    /* This line creates smooth animations for all property changes over 0.3 seconds with an ease timing function. */
+    transition: all 0.3s ease;
+    /* This line removes underlines from links within the card. */
+    text-decoration: none;
+    /* This line makes the entire card behave as a block-level element for proper link functionality. */
+    display: block;
+}
+
+/* This line targets idea cards when they are hovered over and changes their background to a slightly darker blue (#BBDEFB). */
+.idea-card:hover {
+    background-color: #BBDEFB;
+    /* This line moves the card up by 5 pixels when hovered, creating a lifting effect. */
+    transform: translateY(-5px);
+    /* This line enhances the shadow effect on hover, making it larger and more prominent with 30% opacity. */
+    box-shadow: 0 8px 20px rgba(41, 182, 246, 0.3);
+}
+
+/* This line targets images inside idea cards and makes them span the full width of their container. */
+.idea-card img {
+    width: 100%;
+    /* This line sets a fixed height of 200 pixels for all card images. */
+    height: 200px;
+    /* This line ensures images maintain their aspect ratio while filling the designated space, cropping if necessary. */
+    object-fit: cover;
+    /* This line adds a 2-pixel blue border below each image. */
+    border-bottom: 2px solid #29B6F6;
+}
+
+/* This line targets elements with the class "card-content" and adds 15 pixels of padding on all sides. */
+.card-content {
+    padding: 15px;
+    /* This line centers the text content within each card. */
+    text-align: center;
+}
+
+/* This line targets elements with the class "card-title" and sets their text color to dark blue (#1976D2). */
+.card-title {
+    color: #1976D2;
+    /* This line sets the font size of card titles to 16 pixels. */
+    font-size: 16px;
+    /* This line makes card titles semi-bold with a weight of 600. */
+    font-weight: 600;
+    /* This line removes all default margins from card titles. */
+    margin: 0;
+    /* This line sets the line height to 1.3 times the font size for better readability. */
+    line-height: 1.3;
+}
+
+/* This media query applies styles only when the screen width is 1024 pixels or less (tablet size). */
+@media (max-width: 1024px) {
+    /* This line reduces the grid to 3 equal columns for tablet-sized screens. */
+    .ideas-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* This media query applies styles only when the screen width is 768 pixels or less (mobile size). */
+@media (max-width: 768px) {
+    /* This line reduces the grid to 2 equal columns for mobile screens. */
+    .ideas-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* This line reduces the gap between grid items to 15 pixels on mobile. */
+        gap: 15px;
+    }
+    
+    /* This line makes the search bar take up 95% of its container width on mobile devices. */
+    .search-bar {
+        width: 95%;
+    }
+    
+    /* This line reduces the h1 font size to 36 pixels on mobile screens. */
+    h1 {
+        font-size: 36px;
+    }
+    
+    /* This line reduces the container padding to 20 pixels on all sides for mobile devices. */
+    .homepage-container {
+        padding: 20px;
+    }
+}
+
+/* This media query applies styles only when the screen width is 480 pixels or less (small mobile size). */
+@media (max-width: 480px) {
+    /* This line changes the grid to a single column layout for very small screens. */
+    .ideas-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* This line stacks navigation buttons vertically instead of horizontally on small screens. */
+    .nav-buttons {
+        flex-direction: column;
+        /* This line sets 15 pixels of space between stacked navigation buttons. */
+        gap: 15px;
+        /* This line centers the navigation buttons horizontally. */
+        align-items: center;
+    }
+    
+    /* This line further reduces the h1 font size to 28 pixels on very small screens. */
+    h1 {
+        font-size: 28px;
+    }
+}
+
+/* This line targets elements with the class "back-button" and sets their background color to light green (#90ee90). */
+.back-button {
+    background-color: #90ee90;
+    /* This line sets the text color of the back button to lime green (#32cd32). */
+    color: #32cd32;
+    /* This line adds 12 pixels of padding on top and bottom, and 24 pixels on left and right. */
+    padding: 12px 24px;
+    /* This line removes any border from the back button. */
+    border: none;
+    /* This line rounds the corners of the back button with an 8-pixel radius. */
+    border-radius: 8px;
+    /* This line changes the mouse cursor to a pointer when hovering over the button, indicating it's clickable. */
+    cursor: pointer;
+    /* This line sets the font size of the back button to 16 pixels. */
+    font-size: 16px;
+    /* This line removes underlines from the back button if it's used as a link. */
+    text-decoration: none;
+    /* This line makes the back button behave as an inline-block element for proper spacing. */
+    display: inline-block;
+    /* This line creates a smooth color transition effect over 0.3 seconds when the background color changes. */
+    transition: background-color 0.3s ease;
+}
+
+/* This line targets the back button when it is hovered over and changes its background color to light blue (#29B6F6). */
+.back-button:hover {
+    background-color: #29B6F6;
+    /* This line changes the text color to dark blue (#0288D1) when the back button is hovered over. */
+    color: #0288D1;
+}
+
+/* This line targets elements with the class "nav-buttons" and applies flexbox layout to them. */
+.nav-buttons {
+    display: flex;
+    /* This line spreads the navigation buttons to opposite ends of their container with maximum space between them. */
+    justify-content: space-between;
+    /* This line adds 30 pixels of space above the navigation buttons container. */
+    margin-top: 30px;
+}
